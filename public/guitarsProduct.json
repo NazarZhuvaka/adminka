@@ -1,0 +1,50 @@
+{
+  "store": "Гітарний світ",
+  "products": [
+    {
+      "id": 1,
+      "name": "Fender Stratocaster",
+      "type": "електрогітара",
+      "price": 1200,
+      "currency": "USD",
+      "stock": 5,
+      "brand": "Fender"
+    },
+    {
+      "id": 2,
+      "name": "Gibson Les Paul Standard",
+      "type": "електрогітара",
+      "price": 2500,
+      "currency": "USD",
+      "stock": 3,
+      "brand": "Gibson"
+    },
+    {
+      "id": 3,
+      "name": "Ibanez RG550",
+      "type": "електрогітара",
+      "price": 999,
+      "currency": "USD",
+      "stock": 7,
+      "brand": "Ibanez"
+    },
+    {
+      "id": 4,
+      "name": "Taylor 214ce",
+      "type": "акустична гітара",
+      "price": 1100,
+      "currency": "USD",
+      "stock": 4,
+      "brand": "Taylor"
+    },
+    {
+      "id": 5,
+      "name": "Yamaha C40",
+      "type": "класична гітара",
+      "price": 180,
+      "currency": "USD",
+      "stock": 10,
+      "brand": "Yamaha"
+    }
+  ]
+}
