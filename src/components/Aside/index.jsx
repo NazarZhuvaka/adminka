@@ -1,8 +1,13 @@
 import { productsCategories } from '../../constants'
 
+import style from './Aside.module.scss'
+
 function Aside () {
+  const searchProduct = () => {
+    console.log('click');
+  }
   return (
-    <aside>
+    <aside className={style.sideBar}>
       <h1>Categories</h1>
       <ul>
         {productsCategories.map((item, index) => {
@@ -18,6 +23,7 @@ function Aside () {
           )
         })}
       </ul>
+      <button onClick={searchProduct}>Categori of Fender Stratocaster</button>
     </aside>
   )
 }

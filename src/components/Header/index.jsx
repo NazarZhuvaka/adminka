@@ -1,18 +1,19 @@
 import { Link } from 'react-router-dom'
+import style from './Header.module.scss'
 
 function Header (props) {
   return (
-    <header>
+    <header className={style.header}>
       <Link to='/'>GuitarShop</Link>
       {props.isLogin ? (
         'yes'
       ) : (
         <ul>
           <li>
-            <Link to='signIn'>Sign in</Link>
+            <Link to='/signIn'>Sign in</Link>
           </li>
           <li>
-            <Link to='singUp'>Sign up</Link>
+            <Link to='/signUp'>Sign up</Link>
           </li>
         </ul>
       )}

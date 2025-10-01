@@ -1,0 +1,17 @@
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+.main {
+    grid-area: main;
+    padding: 30px 15px;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+}
+

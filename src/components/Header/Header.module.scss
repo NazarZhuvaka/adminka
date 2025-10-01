@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 15px;
+  grid-area: header;
+
+  ul {
+    display: flex;
+    gap: 10px;
+  }
+}

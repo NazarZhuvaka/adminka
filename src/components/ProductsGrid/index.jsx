@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import getProducts from '../../api/getProducts'
+import style from './Product.module.scss'
 
 function ProductsGrid () {
   const [products, setProducts] = useState([])
@@ -23,13 +24,17 @@ function ProductsGrid () {
   }, [])
 
   return (
-    <div>
+    <div className={style.productsGrid}>
       <h2>Products Grid</h2>
-      <ul>
+      <ul className={style.productList}>
         {loading && <p>Loading...</p>}
         {error && <p>Something is wrong {error}</p>}
         {products.map(p => {
-          return <li key={p.id}>{p.name} Brand is: {p.brand}</li>
+          return (
+            <li key={p.id} className={style.productCard}>
+              {p.name} Brand is: {p.brand}
+            </li>
+          )
         })}
       </ul>
     </div>
