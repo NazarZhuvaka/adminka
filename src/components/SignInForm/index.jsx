@@ -1,5 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik'
-import { SIGN_IN_SCHEMA } from '../../schemas'
+import { SIGN_IN_SCHEMA } from '../../schemas/auth'
 
 const initialtState = {
   firstName: ''
